@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import img from "../assets/70.jpg";
 const About = () => {
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -29,7 +29,7 @@ const About = () => {
         animate="visible"
       >
         <motion.img
-          src="70.jpg"
+          src={img}
           alt="Poornima Pandey"
           className=" border-2 p-1  sm:w-2/3 lg:w-[100%] border-blue-500 rounded-full img_glow relative sm:left-32 lg:left-4"
         

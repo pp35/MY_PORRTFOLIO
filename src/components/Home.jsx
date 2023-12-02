@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Footer";
 import { Fade } from "react-reveal";
-
+import img from "../assets/70.jpg";
 export default function Home() {
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const sentences = ["Welcome To My Portfolio", "Passionate Full-Stack Developer"];
@@ -111,7 +111,7 @@ export default function Home() {
           <Fade up>
             <img
               data-aos="fade-up"
-              src="70.jpg"
+              src={img}
               alt=""
               className="rounded-full border-2 p-1 border-indigo-600 img_glow lg:w-2/5 md:w-2/3 sm:w-2/3 lg:mt-5 sm:mt-8 sm:ml-36 lg:ml-3 transition-all duration-300"
             />

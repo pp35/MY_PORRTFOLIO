@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import img1 from "../assets/Screenshot (13).png";
+import img2 from "../assets/Screenshot (14).png";
+import img3 from "../assets/Screenshot (9).png";
+import img4 from "../assets/Screenshot (10).png";
+import img5 from "../assets/Screenshot (12).png";
 
 export default function Projects() {
   const projects = [
-    { name: 'Crypto Dashboard', link: 'https://pp35.github.io/crypto-dashboard/', image: 'Screenshot (13).png' },
-    { name: 'YouTube Subscribers', link: 'https://get-youtube-subscribers-40mk.onrender.com/', image: 'Screenshot (14).png' },
-    { name: 'Todo App', link: 'https://pp35.github.io/todo-app/', image: 'Screenshot (9).png' },
-    { name: 'Redux Shop', link: 'https://pp35.github.io/redux-shop/', image: 'Screenshot (10).png' },
-    { name: 'TextUtiles', link: 'https://pp35.github.io/', image: 'Screenshot (12).png' },
+    { name: 'Crypto Dashboard', link: 'https://pp35.github.io/crypto-dashboard/', image: img1 },
+    { name: 'YouTube Subscribers', link: 'https://get-youtube-subscribers-40mk.onrender.com/', image: img2 },
+    { name: 'Todo App', link: 'https://pp35.github.io/todo-app/', image: img3 },
+    { name: 'Redux Shop', link: 'https://pp35.github.io/redux-shop/', image: img4 },
+    { name: 'TextUtiles', link: 'https://pp35.github.io/', image: img5 },
   ];
-
+  
   return (
     <div className='p-12 bg-gradient-to-b text-white'>
       <h1 className='text-4xl font-semibold mb-8 leading-normal uppercase text-center'>

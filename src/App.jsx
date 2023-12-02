@@ -6,19 +6,19 @@ import About from './components/About';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-
+import img from "./assets/000.jpg";
 function App() {
   return (
     <div
       className="bg-cover bg-center "
       style={{
-        backgroundImage: 'url("000.jpg")',
+        backgroundImage:  `url(${img})`,
       }}
     >
       <Router>
         <Navbar />
         <Routes>
-          <Route  path="/" element={<Home />} />
+          <Route  path="*" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Projects" element={<Projects />} />
