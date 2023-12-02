@@ -53,7 +53,7 @@ export default function Home() {
             </Fade>
             <Fade right>
               <h2 data-aos="fade-left" className="text-2xl text-white">
-                Hi, I'm <span className="text-5xl text-blue-950 ">Poornima Pandey</span>
+                Hi, I'm <span className="text-5xl text-black ">Poornima Pandey</span>
                 <p data-aos="fade-left">
                   A seasoned full-stack developer with a passion for crafting innovative and efficient solutions. My expertise spans both front-end and back-end technologies, allowing me to create seamless and responsive applications.
                 </p>
@@ -64,10 +64,44 @@ export default function Home() {
   data-aos="fade-up"
   className="bg-gradient-to-r from-blue-800 via-cyan-900 to-teal-700 hover:bg-gradient-to-r hover:from-teal-500 hover:via-cyan-500 hover:to-blue-500 text-white text-xl font-bold py-4 px-6 rounded mt-4 transition-all duration-300"
   onClick={() => {
-    // Handle the click event, e.g., open the resume
+    // Replace 'YOUR_RESUME_LINK' with the actual link to your resume file
+    const resumeLink = 'https://drive.google.com/uc?export=download&id=19WKFGb21QGp68ftcwtyrQFFAxrALtOCO';
+    
+    // Create an anchor element
+    const link = document.createElement('a');
+    link.href = resumeLink;
+    
+    // Set the download attribute to force download
+    link.download = 'Poornima Pandey.pdf';
+    
+    // Append the anchor to the document and trigger a click
+    document.body.appendChild(link);
+    link.click();
+    
+    // Remove the anchor from the document
+    document.body.removeChild(link);
   }}
 >
-  Resume
+  <div className="flex">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="26"
+      height="26"
+      viewBox="0 0 24 24"
+      className="h-auto w-6 mr-2"
+    >
+      <path fill="none" d="M0 0h24v24H0z"></path>
+      <path
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5m-7 1L20 4m-5 0h5v5"
+      ></path>
+    </svg>
+    Resume
+  </div>
 </button>
 
 

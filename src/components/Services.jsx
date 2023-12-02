@@ -7,7 +7,7 @@ const Services = () => {
     { name: 'JavaScript', percentage: 75 },
     { name: 'React', percentage: 70 },
     { name: 'MongoDB', percentage: 70 },
-    { name: 'SQL', percentage: 60 }, // Added SQL
+    { name: 'SQL', percentage: 60 },
   ];
 
   const [animatedServicesData, setAnimatedServicesData] = useState(servicesData);
@@ -41,7 +41,7 @@ const Services = () => {
       <h1 className='text-4xl md:text-5xl font-bold mb-6 md:mb-10 uppercase text-white text-center lg:justify-start'>
         Our Services
       </h1>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8'> {/* Updated to 6 columns for SQL */}
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8'> 
         {animatedServicesData.map((service) => (
           <div
             key={service.name}
