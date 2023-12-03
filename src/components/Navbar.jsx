@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex justify-center items-center h-full">
         <ul className="text-center text-xl">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-500 cursor-pointer hover:rounded">
-            <NavLink to="/" onClick={handleClick}>Home</NavLink>
+            <NavLink to="*" onClick={handleClick}>Home</NavLink>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-500 cursor-pointer hover:rounded">
             <NavLink to="/About" onClick={handleClick}>About</NavLink>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px]">
-              <NavLink to="/" activeClassName="text-blue-500">Home</NavLink>
+              <NavLink to="*" activeClassName="text-blue-500">Home</NavLink>
               <NavLink to="/About" activeClassName="text-blue-500">About</NavLink>
               <NavLink to="/Services" activeClassName="text-blue-500">Services</NavLink>
               <NavLink to="/Projects" activeClassName="text-blue-500">Projects</NavLink>
