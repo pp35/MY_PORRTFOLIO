@@ -18,8 +18,8 @@ const About = () => {
   };
 
   return (
-    <div className="container mx-auto py-16">
-      <h1 className="text-lg md:text-6xl font-bold text-center mb-8 text-blue-500">
+    <div className="container mx-auto py-24">
+      <h1 className="text-lg md:text-6xl font-bold text-center mb-7 text-blue-500">
         Hello, I'm Poornima Pandey 🌟
       </h1>
       <motion.div
@@ -31,7 +31,7 @@ const About = () => {
         <motion.img
           src={img}
           alt="Poornima Pandey"
-          className=" border-2 p-1  sm:w-2/3 lg:w-[100%] border-blue-500 rounded-full img_glow relative sm:left-32 lg:left-4"
+          className=" border-2 p-1  sm:w-2/3 lg:w-[90%] border-blue-500 rounded-full img_glow relative sm:left-32 lg:left-4"
         
           variants={imgVariants}
         />

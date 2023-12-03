@@ -22,7 +22,7 @@ export default function Projects() {
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center'>
         {projects.map((project, index) => (
-          <Link key={index} to={project.link} className='no-underline'>
+          <a key={index} href={project.link} target="_blank" rel="noopener noreferrer" className='no-underline'>
             <div className="project-container transform transition-transform hover:scale-105">
               <img
                 className='project-image rounded-2xl border-4 border-pink-500 shadow-lg'
@@ -31,7 +31,7 @@ export default function Projects() {
               />
               <p className="text-xl mt-3 font-semibold text-center">{project.name}</p>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </div>

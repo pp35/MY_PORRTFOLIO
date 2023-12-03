@@ -8,18 +8,12 @@ const Navbar = () => {
 
   const handleClick = () => setClick(!click);
 
-  const navLinks = [
-    { to: '/', label: 'Home' },
-    { to: '/About', label: 'About' },
-    { to: '/Services', label: 'Services' },
-    { to: '/Projects', label: 'Projects' },
-    { to: '/Contact', label: 'Contact' },
-  ];
+  
 
   const mobileNavContent = (
     <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-slate-900 transition">
       <ul className="text-center text-xl p-20">
-        <Link to="/">
+        <Link to="*">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-500 cursor-pointer hover:rounded">Home</li>
         </Link>
         <Link to="/About">
