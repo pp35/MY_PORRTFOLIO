@@ -1,6 +1,6 @@
 {
-  "name": "my_portfolio",
-  "homepage": "https://pp35.github.io/my_portfolio",
+  "name": "portfolio",
+  "homepage": "https://pp35.github.io/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
