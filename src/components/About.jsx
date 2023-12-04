@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <div className="container mx-auto py-24">
-      <h1 className="sm:text-5xl lg:text-6xl md:text-5xl font-bold text-center mb-7 text-blue-500">
+      <h1 className=" text-5xl  font-bold text-center mb-7 text-blue-500">
         Hello, I'm Poornima Pandey 🌟
       </h1>
       <motion.div

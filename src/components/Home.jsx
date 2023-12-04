@@ -17,7 +17,7 @@ export default function Home() {
           </div>
 
           <div className="lg:w-1/2 lg:text-start text-center">
-            <h1 className="text-4xl lg:text-6xl font-semibold mb-2 lg:mb-8 leading-normal uppercase text-black">
+            <h1 className="text-4xl lg:text-6xl font-semibold mb-2 lg:mb-8 leading-normal uppercase text-blue-300">
             <TypeAnimation
               sequence={[
                 "Welcome To My Portfolio",
@@ -34,7 +34,7 @@ export default function Home() {
             </h1>
             <h2 className="text-2xl text-white">
               Hi, I'm <span className="text-5xl text-black ">Poornima Pandey</span>
-              <p>
+              <p className="m-3  italic">
                 A seasoned full-stack developer with a passion for crafting
                 innovative and efficient solutions. My expertise spans both
                 front-end and back-end technologies, allowing me to create
