@@ -15,7 +15,7 @@ function App() {
         backgroundImage:  `url(${img})`,
       }}
     >
-      <Router basename="/my_portfolio">
+      <Router basename="/portfolio">
         <Navbar />
         <Routes>
           <Route  path="*" element={<Home />} />
