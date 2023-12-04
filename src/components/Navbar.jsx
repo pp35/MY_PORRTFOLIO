@@ -13,19 +13,19 @@ const Navbar = () => {
       <div className="flex justify-center items-center h-full">
         <ul className="text-center text-xl">
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-500 cursor-pointer hover:rounded">
-            <NavLink to="*" onClick={handleClick}>Home</NavLink>
+            <NavLink to="*" onClick={handleClick} className="text-blue-500">Home</NavLink>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-500 cursor-pointer hover:rounded">
-            <NavLink to="/About" onClick={handleClick}>About</NavLink>
+            <NavLink to="/About" onClick={handleClick} className="text-blue-500">About</NavLink>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-500 cursor-pointer hover:rounded">
-            <NavLink to="/Services" onClick={handleClick}>Services</NavLink>
+            <NavLink to="/Services" onClick={handleClick} className="text-blue-500">Services</NavLink>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-500 cursor-pointer hover:rounded">
-            <NavLink to="/Projects" onClick={handleClick}>Projects</NavLink>
+            <NavLink to="/Projects" onClick={handleClick} className="text-blue-500">Projects</NavLink>
           </li>
           <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-500 cursor-pointer hover:rounded">
-            <NavLink to="/Contact" onClick={handleClick}>Contact</NavLink>
+            <NavLink to="/Contact" onClick={handleClick} className="text-blue-500">Contact</NavLink>
           </li>
         </ul>
       </div>
@@ -41,17 +41,17 @@ const Navbar = () => {
         <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px]">
-              <NavLink to="*" activeClassName="text-blue-500">Home</NavLink>
-              <NavLink to="/About" activeClassName="text-blue-500">About</NavLink>
-              <NavLink to="/Services" activeClassName="text-blue-500">Services</NavLink>
-              <NavLink to="/Projects" activeClassName="text-blue-500">Projects</NavLink>
-              <NavLink to="/Contact" activeClassName="text-blue-500">Contact</NavLink>
+              <NavLink to="*" style={{ color: 'white' }} className="text-blue-500">Home</NavLink>
+              <NavLink to="/About" style={{ color: 'white' }} className="text-blue-500">About</NavLink>
+              <NavLink to="/Services" style={{ color: 'white' }} className="text-blue-500">Services</NavLink>
+              <NavLink to="/Projects" style={{ color: 'white' }} className="text-blue-500">Projects</NavLink>
+              <NavLink to="/Contact" style={{ color: 'white' }} className="text-blue-500">Contact</NavLink>
             </ul>
           </div>
         </div>
         {click ? mobileNavContent : null}
         <button className="block sm:hidden transition" onClick={handleClick}>
-          {click ? <FaTimes /> : <CgMenuGridR />}
+          {click ? <FaTimes /> : <CgMenuGridR className='w-10 text-5xl' />}
         </button>
       </div>
     </nav>

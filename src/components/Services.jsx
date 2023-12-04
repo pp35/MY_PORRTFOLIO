@@ -49,20 +49,23 @@ const Services = () => {
           >
             <p className='text-3xl font-semibold text-white mb-4 content-center'>
               <span role='img' aria-label='Service Icon'>
-                {service.name === 'HTML5' && <span style={{ color: 'orange' }}>&#60;&#47;&#62;</span>}
+                {service.name === 'HTML5' && (
+                  <span style={{ color: 'orange', margin: '0 4px' }}>&#60;&#47;&#62;</span>
+                )}
                 {service.name === 'CSS3' && '🎨'}
                 {service.name === 'JavaScript' && '🚀'}
                 {service.name === 'React' && '⚛️'}
                 {service.name === 'MongoDB' && '🍃'}
                 {service.name === 'SQL' && '📊'}
               </span>
+              <br /> {/* Add a line break */}
               {service.name}
             </p>
             <div className='text-fuchsia-300 text-lg mb-4'>{`${service.percentage}% proficiency`}</div>
-            <div className='relative w-full bg-fuchsia-400 h-3 rounded'>
+            <div className='relative w-full bg-fuchsia-400 h-3 rounded' style={{ padding: '0 10px' }}>
               <div
                 className='absolute left-0 top-0 h-full bg-blue-600 rounded'
-                style={{ width: `${service.percentage}%` }}
+                style={{ width: `calc(${service.percentage}% - 20px)` }}
               ></div>
             </div>
           </div>
