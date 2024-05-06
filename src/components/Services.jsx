@@ -45,7 +45,7 @@ const Services = () => {
         {animatedServicesData.map((service) => (
           <div
             key={service.name}
-            className='bg-gray-900 p-8 rounded-md text-center shadow-lg hover:shadow-xl transition duration-300'
+            className='bg-gray-900 p-8 rounded-md text-center shadow-lg hover:shadow-xl transition  duration-300'
           >
             <p className='text-3xl font-semibold text-white mb-4 content-center'>
               <span role='img' aria-label='Service Icon'>
