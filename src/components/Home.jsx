@@ -45,7 +45,7 @@ export default function Home() {
               className="bg-gradient-to-r from-blue-800 via-cyan-900 to-teal-700 hover:bg-gradient-to-r hover:from-teal-500 hover:via-cyan-500 hover:to-blue-500 text-white text-xl font-bold py-4 px-6 rounded mt-4 transition-all duration-300"
               onClick={() => {
                 const resumeLink =
-                  "https://docs.google.com/document/d/1nt8Gg6WqTrCGrDy-WRq9sgOLB3hWJ3Lw9CpYRWbyFGc/edit?usp=sharing";
+                  "https://docs.google.com/document/d/1FVd1EKYrGVo62sIAAvPg_UixiLHRpNwRzPZMe1-oAw8/edit?usp=sharing";
 
                 const link = document.createElement("a");
                 link.href = resumeLink;
